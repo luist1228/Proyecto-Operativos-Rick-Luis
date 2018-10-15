@@ -1,0 +1,13 @@
+Tiempo dia:                3         
+Despacho dias:             5            
+MaxCables:                 35                             
+MaxBaterias:               25             
+MaxPantallas:              30           
+PInicialCables:            1           
+pInicialBaterias:          1              
+pInicialPantallas:         1               
+pMaxCables:                3             
+pMaxBaterias:              4           
+pMaxPantallas:             3                       
+eInicial:                  1                      
+eMax:                      5                          

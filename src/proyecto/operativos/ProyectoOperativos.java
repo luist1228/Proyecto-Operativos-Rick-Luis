@@ -5,17 +5,23 @@
  */
 package proyecto.operativos;
 
+import java.io.FileNotFoundException;
+
 /**
  *
  * @author LuisM
  */
 public class ProyectoOperativos {
-
+    
+    
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         // TODO code application logic here
+        App N=new App();
+        N.Leer();
+        
     }
     
 }

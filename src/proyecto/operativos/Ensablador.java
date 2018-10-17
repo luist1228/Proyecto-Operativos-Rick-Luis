@@ -9,11 +9,8 @@ package proyecto.operativos;
  *
  * @author LuisM
  */
-public class Productor extends Thread{
-    //Almacenint o vec de int???
+
+
+public class Ensablador extends Thread{
     
-    
-    public Productor(){
-        
-    }
 }

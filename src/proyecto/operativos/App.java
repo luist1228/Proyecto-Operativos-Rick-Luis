@@ -39,6 +39,19 @@ public class App {
     private int Ei;
     private int Emax; 
     
+    private Almacen Ac;
+    private Almacen Ab;
+    private Almacen Ap;
+    private int Afinal;
+    
+    private Productor Pc[];
+    private Productor Pb[];
+    private Productor Pp[];
+    
+    
+    
+    
+    
 public void Leer() throws FileNotFoundException {
 
     Scanner s = new Scanner(new File("C:\\Users\\luism\\Desktop\\Proyecto-Operativos\\src\\proyecto\\operativos\\Datos Iniciales.txt"));
@@ -93,10 +106,31 @@ public void Leer() throws FileNotFoundException {
     
     line=s.nextLine();
     this.Emax= parseInt(line.substring(27, 31).trim());
-    System.out.println(this.Emax);
+    System.out.println(this.Emax);    
+}
+
+public void crearAlmacenes(){
+    this.Ac= new Almacen(this.maxC);
+    this.Ab= new Almacen(this.maxB);
+    this.Ap= new Almacen(this.maxP);
     
+}
+
+public void crearProductores(){
+    this.Pc=new Productor [this.PmaxC];
+    for (int i =0; i<this.PmaxC; i++){
+        this.Pc[i]=new Productor();
+    }
     
+    this.Pb=new Productor [this.PmaxB];
+    for(int i=0; i<this.maxB;i++){
+        this.Pb[i]=new Productor();
+    }
     
+    this.Pp=new Productor [this.PmaxP];
+    for(int i=0; i<this.maxP; i++){
+        this.Pp[i]=new Productor ();
+    }
     
 }
 

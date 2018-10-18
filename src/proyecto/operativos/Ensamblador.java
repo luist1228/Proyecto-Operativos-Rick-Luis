@@ -11,6 +11,6 @@ package proyecto.operativos;
  */
 
 
-public class Ensablador extends Thread{
+public class Ensamblador extends Thread{
     
 }

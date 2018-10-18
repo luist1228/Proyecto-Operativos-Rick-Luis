@@ -119,17 +119,17 @@ public void crearAlmacenes(){
 public void crearProductores(){
     this.Pc=new Productor [this.PmaxC];
     for (int i =0; i<this.PmaxC; i++){
-        this.Pc[i]=new Productor();
+        this.Pc[i]=new Productor(this.Ac);
     }
     
     this.Pb=new Productor [this.PmaxB];
     for(int i=0; i<this.maxB;i++){
-        this.Pb[i]=new Productor();
+        this.Pb[i]=new Productor(this.Ab);
     }
     
     this.Pp=new Productor [this.PmaxP];
     for(int i=0; i<this.maxP; i++){
-        this.Pp[i]=new Productor ();
+        this.Pp[i]=new Productor (this.Ap);
     }
     
 }
